@@ -1,6 +1,6 @@
 import { Search } from 'lucide-react'
 import React from 'react'
-import ProductContent from '@/components/ProductContent/page';
+import ProductContent from './ProductContent'
 
 export default function page() {
   return (
