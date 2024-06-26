@@ -1,10 +1,15 @@
 import React from "react";
 import { data } from "@/db/data";
 
-export default function ProductContent() {
+export default function ProductContent({ search }: { search: string }) {
+  const filteredData = data.filter((item) =>
+    search === ""
+      ? item
+      : item.title.toLowerCase().includes(search.toLowerCase())
+  );
   return (
     <div>
-      {data.map((item, index) => (
+      {filteredData.map((item, index) => (
         <div key={index} className="col-span-3 grid grid-cols-1">
           <div className="flex">
             <img src={item.img} alt={item.title} className="w-40 h-40" />
