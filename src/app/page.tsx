@@ -1,5 +1,5 @@
 import Image from "next/image";
 
 export default function Home() {
-  return <h1>hello Saurav xakka</h1>;
+  return <h1>hello Aadil muji xakka</h1>;
 }
