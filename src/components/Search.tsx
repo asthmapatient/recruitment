@@ -7,8 +7,8 @@ export default function page() {
   const [search, setSearch] = useState("");
 
   return (
-    <main className="flex justify-center items-center mt-16">
-      <div className="flex flex-col gap-6">
+    <main className="mt-16">
+      <div className="flex justify-center items-center flex-col gap-6">
         <h1 className="text-4xl font-semibold ">
           <span className="text-textclr_green">Herald</span> is Recruiting!
         </h1>
