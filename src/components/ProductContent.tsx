@@ -8,7 +8,7 @@ export default function ProductContent({ search }: { search: string }) {
       : item.title.toLowerCase().includes(search.toLowerCase())
   );
   return (
-    <div className="grid grid-cols-4 gap-10">
+    <div className="grid grid-cols-4 gap-10 mt-10">
       {filteredData.map((item, index) => (
         <div key={index} className="w-[250px]">
           <img src={item.img} alt={item.title} className=" w-full aspect-square" />
