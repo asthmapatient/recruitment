@@ -1,5 +1,10 @@
-import Image from "next/image";
+import Search from '../components/Search/page';
 
 export default function Home() {
-  return <h1>hello Aadil muji xakka</h1>;
+
+  return(
+    <main>
+      <Search />
+    </main>
+  )
 }
