@@ -3,7 +3,7 @@ import React from "react";
 export default function ProductContent({ filteredData }: { filteredData: any[] }) {
   
   return (
-    <div className="grid grid-cols-4 gap-10">
+    <div className="grid grid-cols-4 gap-10 mt-10">
       {filteredData.map((item, index) => (
         <div key={index} className="w-[250px]">
           <img src={item.img} alt={item.title} className=" w-full aspect-square" />
