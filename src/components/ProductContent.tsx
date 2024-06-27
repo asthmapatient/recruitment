@@ -1,12 +1,7 @@
 import React from "react";
-import { data } from "@/db/data";
 
-export default function ProductContent({ search }: { search: string }) {
-  const filteredData = data.filter((item) =>
-    search === ""
-      ? item
-      : item.title.toLowerCase().includes(search.toLowerCase())
-  );
+export default function ProductContent({ filteredData }: { filteredData: any[] }) {
+  
   return (
     <div className="grid grid-cols-4 gap-10">
       {filteredData.map((item, index) => (
